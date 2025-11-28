@@ -1,0 +1,8 @@
+{
+  "name": "WeChat Clone",
+  "description": "A high-fidelity WeChat clone featuring real-time AI chat powered by Gemini, contacts management, and a Moments feed simulation.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}
