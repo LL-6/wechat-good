@@ -8,7 +8,7 @@ let hasApiKey = false;
 const getClient = () => {
   if (!client) {
     // Check Vite env first (standard for Vercel/Vite apps), then fallback to process.env
-    const apiKey = (import.meta as any).env?.VITE_API_KEY || process.env.API_KEY;
+    const apiKey = (import.meta as any).env?.VITE_API_KEY;
     
     if (apiKey && apiKey.length > 0) {
       client = new GoogleGenAI({ apiKey: apiKey });
